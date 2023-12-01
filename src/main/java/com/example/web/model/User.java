@@ -21,7 +21,10 @@ public class User {
 
     }
 
-    public User(String firstName, String lastName, String email) {
+
+
+    public User(int id, String firstName, String lastName, String email) {
+        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -30,6 +33,10 @@ public class User {
 
     public int getId() {
         return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getFirstName() {
